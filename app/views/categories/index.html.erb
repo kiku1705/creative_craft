@@ -1,0 +1,16 @@
+<% if current_user %>
+  <%= button_to "logout", destroy_user_session_path, method: :delete  %>
+<% end %>
+<% if notice.present? %>
+  <%= notice %>
+<% end %>
+<div class="mt-4">
+  <%= render "form", category: @category %>
+</div>
+
+<div id="categories" >
+  <h1 class="font-bold text-lg mb-7">  Categories </h1>
+  <div class="px-5">
+    <%= render @categories %>
+  </div>
+</div>
