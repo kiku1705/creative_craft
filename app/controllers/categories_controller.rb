@@ -1,6 +1,5 @@
 class CategoriesController < ApplicationController
   def index
-    # @category = Category.new
     # pagination cursor based, using default limit 10
     last_seen = params[:last_seen] || 0
     @categories = Category.where("id > ?",last_seen).limit(10)
