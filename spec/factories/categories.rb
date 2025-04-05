@@ -1,7 +1,7 @@
 FactoryBot.define do
-  factory :category, class: Category do
+  factory :category  do
     sequence :name do |n|
-      "TestCategory#{n}"
+      "Test Category#{n}"
     end
     description { "Test Description" }
     # active { true }

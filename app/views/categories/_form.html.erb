@@ -2,6 +2,7 @@
   <div class="mb-5">
     <%= form.text_field :name, placeholder: "Add name of your category", class: "inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none" %>
     <%= form.text_field :description, placeholder: "Add description", class: "inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none" %>
+    <%= form.file_field :image, direct_upload: true %>
     <%= form.submit "Save", class: "btn py-2 ml-2 bg-blue-600 text-white" %>
   </div>
 <% end %>
